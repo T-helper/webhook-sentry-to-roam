@@ -69,7 +69,7 @@ func sendPostRequest(jsonData []byte, url string) error {
 
 	// Convert the parsed data into a table-like structure in the specified order
 	table := fmt.Sprintf(
-		"===========================================================\n\nProject: %s\n\nID: %s\n\nLevel: %s\n\nEnvironment: %s\n\nCulprit: %s\n\nMessage: %s\n\nURL: %s\n\n===========================================================",
+		"===========================================================\n\nProject: %s\n\nID: %s\n\nLevel: %s\n\nEnvironment: %s\n\nCulprit: %s\n\nMessage: %s\n\nDetails: %s\n\n===========================================================",
 		incomingPayload.Project,
 		incomingPayload.ID,
 		incomingPayload.Level,
